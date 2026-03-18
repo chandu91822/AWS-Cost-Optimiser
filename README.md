@@ -28,7 +28,6 @@ It leverages **AWS Lambda, Boto3, and SNS** to automate snapshot analysis, safe 
 * ⚡ **Serverless Execution**
 
   * Runs on AWS Lambda
-  * Can be triggered using EventBridge (cron scheduling)
 
 * 📢 **Automated Notifications**
 
@@ -43,8 +42,6 @@ It leverages **AWS Lambda, Boto3, and SNS** to automate snapshot analysis, safe 
 ## 🏗️ Architecture
 
 ```
-EventBridge (Scheduler)
-        ↓
    AWS Lambda
         ↓
   EC2 Snapshots (Scan & Analyze)
