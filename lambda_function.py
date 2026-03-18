@@ -88,7 +88,7 @@ def lambda_handler(event, context):
         sns = boto3.client('sns', region_name='us-east-1')  # change if needed
 
         sns.publish(
-            TopicArn='arn:aws:sns:us-east-1:675079658906:Default_CloudWatch_Alarms_Topic', #keep your SNS Arn
+            TopicArn='', #keep your SNS Arn
             Message=(
                 f"Snapshot Cleanup Report:\n"
                 f"Deleted: {total_deleted}\n"
